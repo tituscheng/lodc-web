@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Loving Open Door Korean Church</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, , initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Titus Cheng">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="styles/blessingtheme/main.css" type="text/css">
+</head>
+
+<body ng-app="lodcWebApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Add your site or application content here -->
+<div id="preloader"></div>
+<div id="wrapper">
+    <!-- header begin -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <!-- logo begin -->
+                    <div id="logo">
+                        <div class="inner">
+                            <!--                                 <a href="index.html">
+                                    <img src="images/blessingtheme/logo.png" alt="" class="logo-1">
+                                    <img src="images/blessingtheme/logo-2.png" alt="" class="logo-2"> -->
+                            <img src="images/lodc/lodc-logo-white1.png" alt="" class="logo-1">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- logo close -->
+                </div>
+                <div class="col-md-9">
+                    <!-- mainmenu begin -->
+                    <div id="mainmenu-container">
+                        <ul id="mainmenu">
+                            <li><a ui-sref="main">Home</a>
+                                <ul>
+                                    <li><a href="index.html">Homepage 1</a></li>
+                                    <li><a href="index-2.html">Homepage 2</a></li>
+                                    <li><a href="index-3.html">Homepage 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a ui-sref="events">Events</a>
+                                <ul>
+                                    <li><a href="events.html">List Type</a></li>
+                                    <li><a href="events-calendar.html">Calendar Type</a></li>
+                                </ul>
+                            </li>
+                            <li><a ui-sref="sermons">Sermons</a></li>
+               <!--              <li><a href="features.html">Features</a></li> -->
+                            <li><a ui-sref="news">News</a></li>
+             <!--                <li><a href="gallery.html">Gallery</a></li> -->
+                            <li><a ui-sref="contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!-- mainmenu close -->
+                    <!-- social icons -->
+                    <div class="social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-rss"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-envelope-o"></i></a>
+                    </div>
+                    <!-- social icons close -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header close -->
+      <div ui-view></div>
+
+        <!-- footer begin -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        &copy; Copyiright 2015 - Blessing by SatriaThemes
+                    </div>
+                    <div class="col-md-6">
+                        <nav>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Events</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer close -->
+    </div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+    ! function(A, n, g, u, l, a, r) {
+        A.GoogleAnalyticsObject = l, A[l] = A[l] || function() {
+                (A[l].q = A[l].q || []).push(arguments)
+            }, A[l].l = +new Date, a = n.createElement(g),
+            r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+    }(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+    </script>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- endbuild -->
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- Blessings theme javascripts --> 
+    <script src="js/blessingthemejs/jquery.min.js"></script>
+    <script src="js/blessingthemejs/bootstrap.min.js"></script>
+    <script src="js/blessingthemejs/jquery.isotope.min.js"></script>
+    <script src="js/blessingthemejs/jquery.prettyPhoto.js"></script>
+    <script src="js/blessingthemejs/easing.js"></script>
+    <script src="js/blessingthemejs/jquery.ui.totop.js"></script>
+    <script src="js/blessingthemejs/selectnav.js"></script>
+    <script src="js/blessingthemejs/ender.js"></script>
+    <script src="js/blessingthemejs/responsiveslides.min.js"></script>
+    <script src="js/blessingthemejs/owl.carousel.js"></script>
+    <script src="js/blessingthemejs/jquery.fitvids.js"></script>
+    <script src="js/blessingthemejs/jquery.plugin.js"></script>
+    <script src="js/blessingthemejs/jquery.countdown.js"></script>
+    <script src="js/blessingthemejs/countdown-custom.js"></script>
+    <script src="js/blessingthemejs/wow.min.js"></script>   
+    <script src="js/blessingthemejs/custom.js"></script>
+
+    <!-- SLIDER REVOLUTION SCRIPTS  -->
+    <script type="text/javascript" src="js/blessingthemejs/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="js/blessingthemejs/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<!--     <script src="scripts/blessingthemejs/rs-plugin/rev-setting-1.js"></script>
+    <!-- Blessings theme javascripts -->
+
+
+    <!-- bower:js -->
+    <!-- endbower -->
+    
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="js/lib/angular/underscore.js"></script>
+    <script src="js/lib/angular/restangular.js"></script>
+    <script src="js/lib/angular/angular-ui-router.min.js"></script>
+    
+    <script src="js/app.js"></script>
+    <script src="js/controllers/main.js"></script>
+    <script src="js/controllers/about.js"></script>
+    <script src="js/controllers/sermonlist.controller.js"></script>
+    <script src="js/controllers/sermonvideo.controller.js"></script>
+    <script src="js/controllers/event.controller.js"></script>
+    <script src="js/controllers/news.controller.js"></script>
+    <script src="js/services/sermon.service.js"></script>
+    <script src="js/services/event.service.js"></script>
+    <script src="js/services/news.service.js"></script>
+    <!-- endbuild -->
+ -->
+</body>
+
+</html>
